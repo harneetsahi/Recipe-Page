@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: Outfit;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  body {
+    max-width: 1440px;
+  }
+  main {
+    width: 45%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  h1 {
+    margin-top: 25px;
+  }
+
+  .omlette {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  .ingredients-section ul li {
+    padding-left: 15px;
+  }
+
+  .instructions-section ol li {
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    line-height: 25px;
+    background-color: white;
+    font-size: 14px;
+  }
+
+  .main-section {
+    padding: 1px 22px;
+  }
+
+  .omlette {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 15px;
+  }
+
+  .ingredients-section ul li {
+    padding-left: 10px;
+  }
+
+  .instructions-section ol li {
+    padding-left: 10px;
+  }
+}
+
+h1 {
+  font-family: Young Serif, serif;
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: hsl(24, 5%, 18%);
+}
+
+.prep-section {
+  margin-top: 20px;
+  padding: 20px 23px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 13px;
+}
+
+.prep-section ul {
+  padding-left: 26px;
+  margin-top: 6px;
+}
+.prep-section ul li {
+  padding-left: 16px;
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+h2 {
+  font-family: Young Serif, serif;
+  color: hsl(14, 45%, 36%);
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.ingredients-section,
+.instructions-section {
+  padding-bottom: 23px;
+  border-bottom: 1px solid lightgrey;
+}
+.ingredients-section ul {
+  padding-left: 20px;
+}
+
+.instructions-section ol {
+  padding-left: 20px;
+}
+
+.instructions-section ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 35px;
+  margin-top: 12px;
+}
+
+.items p {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.item-2,
+.item-4,
+.item-6,
+.item-8 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6 {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
